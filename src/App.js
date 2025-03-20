@@ -1,13 +1,23 @@
 import './App.css';
-import React from "react";
+import {React} from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Receipes from './pages/Receipes';
+import { useEffect } from 'react';
 
 
 function App() {
+
+  
+  //in case if you want to redirect in future.
+    // useEffect(() => {
+    //   window.location.href = "https://www.google.com";
+    // }, []);
+
+    // return null;
+
   return (
     <div style={styles.body}>
     <Router>
