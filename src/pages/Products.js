@@ -3,23 +3,24 @@ import React from 'react'
 function Products() {
 
   const products = [
-    // "Idli Rava",
+    "Idli Rava",
     "Chakki Atta",
-    // "Maida",
-    // "Bombay Rava",
-    // "Chiroti Rava",
-    // "Bansi Rava",
-    // "Besan Flour"
+    "Maida",
+    "Bombay Rava",
+    "Chiroti Rava",
+    "Bansi Rava",
+    "Besan Flour"
   ];
 
   const productImages = {
-    "Idli Rava": "https://via.placeholder.com/50", // Replace with actual image URLs
-    "Chakki Atta": "https://drive.google.com/file/d/1bEaZWTOGhmV_MPdt3bq_IvBYfNkMd-3B/view",
-    "Maida": "https://via.placeholder.com/50",
-    "Bombay Rava": "https://via.placeholder.com/50",
-    "Chiroti Rava": "https://via.placeholder.com/50",
-    "Bansi Rava": "https://via.placeholder.com/50",
-    "Besan Flour": "https://via.placeholder.com/50",
+    "Idli Rava": "https://i.imgur.com/8vEgFqd.jpg", // Replace with actual image URLs
+    // <img src="https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID" alt="drive image"/>
+    "Chakki Atta": "https://i.imgur.com/znZOMpK.jpg",
+    "Maida": "https://i.imgur.com/WECbYrA.jpg",
+    "Bombay Rava": "https://i.imgur.com/QEwsWeO.jpg",
+    "Chiroti Rava": "https://i.imgur.com/KPLmWOH.jpg",
+    "Bansi Rava": "https://i.imgur.com/KtNysYD.jpg",
+    "Besan Flour": "https://i.imgur.com/8ccp21l.jpg",
   };
 
   const styles = {
@@ -52,6 +53,7 @@ function Products() {
     },
     productItem: {
       display : "flex",
+      flexDirection : "column",
       alignItems : "center",
       gap : "10px",
       padding: "16px",
@@ -62,9 +64,13 @@ function Products() {
       width : "100%"
     },
     productImage: {
-      width: "50px",
-      height: "50px",
+      width: "500px",
+      height: "500px",
       borderRadius: "8px",
+    },
+    span : {
+      fontWeight : "bold",
+      fontSize : "20px"
     }
   };
   
@@ -77,7 +83,7 @@ function Products() {
       {products.map((product, index) => (
         <div key={index} style={styles.productItem}>
           <img src={productImages[product]} alt={product} style={styles.productImage} />
-          <span>{product}</span>
+          <span style = {styles.span}>{product}</span>
         </div>
       ))}
     </div>
