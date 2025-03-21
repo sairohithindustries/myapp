@@ -6,7 +6,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Receipes from './pages/Receipes';
 import Products from './pages/Products';
-import { useEffect } from 'react';
 
 
 function App() {
@@ -29,9 +28,9 @@ function App() {
         <Link style={styles.link} to="/contact">Contact Us </Link>
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/myapp" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />}/>
+        <Route path="/myapp/contact" element={<Contact />}/>
         <Route path="/receipes" element={<Receipes />}/>
         <Route path="/products" element={<Products/>}/>
       </Routes>
