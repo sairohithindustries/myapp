@@ -23,9 +23,9 @@ function App() {
     <Router>
       <div style={styles.appContainer}>
       <div style ={styles.navbar}>
-        <Link style={styles.link} to="/">Home</Link> 
+        <Link style={styles.link} to="/myapp">Home</Link> 
         <Link style={styles.link} to ="/products">Products</Link>
-        <Link style={styles.link} to="/contact">Contact Us </Link>
+        <Link style={styles.link} to="/myapp/contact">Contact Us </Link>
       </div>
       <Routes>
         <Route path="/myapp" element={<Home />} />
