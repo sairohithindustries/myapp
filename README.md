@@ -68,3 +68,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+Home page 
+
+Sai Rohit Industries.
+
+NavBar.(fixed)
+
+Products 
+1) Idli Rava. 
+2) Chakki Atta 
+3) Maida. 
+4) Bombay rava.
+5) Chiroti rava.
+6) Bansi rava. 
+7) Besan Flour
+
+
+
+contact page : 
+mobile number, 
+email , 
+address, 
+google maps layout, 
+
+About , 
+Women Enterpreneru ship . 
+
+
+
+
