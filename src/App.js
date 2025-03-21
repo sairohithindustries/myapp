@@ -20,8 +20,9 @@ function App() {
     // return null;
 
   return (
-    <div style={styles.body}>
+    <>
     <Router>
+      <div style={styles.appContainer}>
       <div style ={styles.navbar}>
         <Link style={styles.link} to="/">Home</Link> 
         <Link style={styles.link} to ="/products">Products</Link>
@@ -34,18 +35,30 @@ function App() {
         <Route path="/receipes" element={<Receipes />}/>
         <Route path="/products" element={<Products/>}/>
       </Routes>
+      </div>
     </Router>
-    </div>
+    </>
+    
   );
 }
 
 const styles = {
+
+  appContainer : {
+    display: "flex",
+    flexDirection : "column",    
+    justifyContent: "center", // Centers the navbar links
+    width: "100%",
+    backgroundColor: "rgba(17, 5, 2, 0.52)",
+    padding: "15px 0",
+  },
 
   navbar: {
     display: "flex",
     justifyContent: "center",
     padding: "15px 0px",
     backgroundColor: "rgba(17, 5, 2, 0.52)",
+    width : "100%",
   },
   link: {
     color: "white",

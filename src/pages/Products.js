@@ -64,8 +64,8 @@ function Products() {
       width : "100%"
     },
     productImage: {
-      width: "400px",
-      height: "400px",
+      width: "200px",
+      height: "200px",
       borderRadius: "8px",
     },
     span : {
