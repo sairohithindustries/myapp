@@ -48,6 +48,7 @@ const styles = {
     width: "100%",
     backgroundColor: "rgba(251, 251, 249, 1)",
     padding: "0px 0px",
+    gap : "0px"
   },
 
   navbar: {

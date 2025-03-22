@@ -9,20 +9,8 @@ function Contact() {
       alignItems: "center",
       justifyContent: "center",
       padding: "24px",
-      backgroundColor: "#f3f4f6",
-      minHeight: "100vh",
-    },
-    heading: {
-      fontSize: "28px",
-      fontWeight: "bold",
-      textAlign: "center",
-      fontFamily: "'Ubuntu', sans-serif",
-      color: "#2c3e50",
-      padding: "20px",
-      border: "2px solid #3498db",
-      borderRadius: "8px",
-      backgroundColor: "#dfe6e9",
-      margin: "0 0 20px 0",
+      backgroundColor: "rgb(171, 171, 164)",
+      minHeight : "100vh"
     },
     contactItem: {
       display: "flex",
