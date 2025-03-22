@@ -43,13 +43,13 @@ function Contact() {
     <div style={styles.container}>
     <div style={styles.contactItem}>
       <img style={styles.icon} src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone" />
-      <a href="tel:+91 9346167010">+91 9346167010</a>
+      <a href="tel:08552226594">08552226594</a>
     </div>
 
-    <div style={styles.contactItem}>
+    {/* <div style={styles.contactItem}>
       <img style={styles.icon} src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png" alt="WhatsApp" />
       <a href="https://wa.me/919346167010" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
-    </div>
+    </div> */}
 
     <div style={styles.contactItem}>
       <img style={styles.icon} src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" />
