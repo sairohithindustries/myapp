@@ -3,17 +3,17 @@ import React from 'react'
 function Products() {
 
   const products = [
-    "Idli Rava",
     "Chakki Atta",
     "Maida",
     "Bombay Rava",
     "Chiroti Rava",
     "Bansi Rava",
-    "Besan Flour"
+    "Besan Flour",
+    "Idli Rava",
   ];
 
   const productImages = {
-    "Idli Rava": "https://i.imgur.com/8vEgFqd.jpg", // Replace with actual image URLs
+     // Replace with actual image URLs
     // <img src="https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID" alt="drive image"/>
     "Chakki Atta": "https://i.imgur.com/znZOMpK.jpg",
     "Maida": "https://i.imgur.com/WECbYrA.jpg",
@@ -21,6 +21,7 @@ function Products() {
     "Chiroti Rava": "https://i.imgur.com/KPLmWOH.jpg",
     "Bansi Rava": "https://i.imgur.com/KtNysYD.jpg",
     "Besan Flour": "https://i.imgur.com/8ccp21l.jpg",
+    "Idli Rava": "https://i.imgur.com/8vEgFqd.jpg",
   };
 
   const styles = {
@@ -56,7 +57,7 @@ function Products() {
       flexDirection : "column",
       alignItems : "center",
       gap : "10px",
-      padding: "16px",
+      padding: "16px 0px",
       backgroundColor: "#ffffff",
       textAlign: "center",
       fontSize: "18px",
@@ -64,9 +65,10 @@ function Products() {
       width : "100%"
     },
     productImage: {
-      width: "200px",
-      height: "200px",
+      width: "100%",
+      height: "auto",
       borderRadius: "8px",
+      objectFit: "cover",
     },
     span : {
       fontWeight : "bold",

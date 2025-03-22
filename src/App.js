@@ -24,15 +24,13 @@ function App() {
       <div style={styles.appContainer}>
       <div style ={styles.navbar}>
         <Link style={styles.link} to="/myapp">Home</Link> 
-        <Link style={styles.link} to ="/products">Products</Link>
+        <Link style={styles.link} to ="/myapp/products">Products</Link>
         <Link style={styles.link} to="/myapp/contact">Contact Us </Link>
       </div>
       <Routes>
         <Route path="/myapp" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/myapp/contact" element={<Contact />}/>
-        <Route path="/receipes" element={<Receipes />}/>
-        <Route path="/products" element={<Products/>}/>
+        <Route path="/myapp/products" element={<Products/>}/>
       </Routes>
       </div>
     </Router>
@@ -48,8 +46,8 @@ const styles = {
     flexDirection : "column",    
     justifyContent: "center", // Centers the navbar links
     width: "100%",
-    backgroundColor: "rgba(17, 5, 2, 0.52)",
-    padding: "15px 0",
+    backgroundColor: "rgba(251, 251, 249, 1)",
+    padding: "0px 0px",
   },
 
   navbar: {
@@ -58,6 +56,9 @@ const styles = {
     padding: "15px 0px",
     backgroundColor: "rgba(17, 5, 2, 0.52)",
     width : "100%",
+    position: "sticky",   // Makes it stick to the top
+    top: "0",             // Sticks to the top of the viewport
+    zIndex: "1000",       // Ensures it's above other elements
   },
   link: {
     color: "white",
