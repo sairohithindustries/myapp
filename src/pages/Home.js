@@ -4,7 +4,9 @@ import {
   ContainerTruck02Icon,
   Plant01Icon,
   PackageProcessIcon,
+  Call02Icon
 } from "hugeicons-react";
+
 import Font, {Text} from 'react-font'
 import Contact from './Contact';
 
@@ -111,7 +113,7 @@ function Home() {
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          gap: "80px",
+          gap: "40px",
         }}
       >
         {advantages.map((item, index) => (

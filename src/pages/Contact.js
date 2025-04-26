@@ -1,4 +1,13 @@
 import React from 'react'
+import Font, {Text} from 'react-font'
+import {
+  TickDouble04Icon,
+  ContainerTruck02Icon,
+  Plant01Icon,
+  PackageProcessIcon,
+  Call02Icon,
+  Mail02Icon
+} from "hugeicons-react";
 
 function Contact() {
 
@@ -8,9 +17,9 @@ function Contact() {
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      padding: "24px",
+      padding: "10px",
       // backgroundColor: "rgb(171, 171, 164)",
-      minHeight : "100vh"
+      // minHeight : "100vh"
     },
     contactItem: {
       display: "flex",
@@ -40,10 +49,14 @@ function Contact() {
   };
   return (
     <>
+    <Font family='Montserrat' weight={1000} italic={true}>
+     <div style = {{ textAlign: "center"}}>
+    <h1>CONTACT</h1>
+    </div> 
+    </Font>
     <div style={styles.container}>
     <div style={styles.contactItem}>
-      <img style={styles.icon} src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone" />
-      <a href="tel:08552226594">08552226594</a>
+      <Call02Icon size={20} fill="black"></Call02Icon> <a href="tel:08552226594">08552226594</a>
     </div>
 
     {/* <div style={styles.contactItem}>
@@ -52,8 +65,7 @@ function Contact() {
     </div> */}
 
     <div style={styles.contactItem}>
-      <img style={styles.icon} src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" />
-      <a href="mailto:srigoldgtl@gmail.com">srigoldgtl@gmail.com</a>
+     <Mail02Icon size={20} ></Mail02Icon> <a href="mailto:srigoldgtl@gmail.com">srigoldgtl@gmail.com</a>
     </div>
 
 
