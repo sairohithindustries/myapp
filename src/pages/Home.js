@@ -82,12 +82,15 @@ function Home() {
           padding: "16px",
         }}
       >
-        <Font family='Cinzel Decorative'>
-        <h1 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "8px" }}>
-          From Field to Flour
+        <Font family='Spectral' weight= "1000000" >
+        <h1 style={{ fontSize: "4rem", marginBottom: "8px" }}>
+          {/* From Field to Flour */}
+          FROM FIELD TO FLOUR
         </h1>
         </Font>
-        <Font family='MedievalSharp'>
+
+
+        <Font family='Montserrat'>
         <p style={{ fontSize: "1.25rem" }}>
           High-Quality Flours for Your Culinary Needs
         </p>
@@ -96,19 +99,19 @@ function Home() {
     </div>
 
     <div style={{ padding: "40px 20px", textAlign: "center" }}>
-      <Font family='MedievalSharp'>
-      <h2 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "30px" }}>
-        OUR ADVANTAGES
+      <Font family='Montserrat' weight={1000} italic={true}>
+      <h2 style={{ fontSize: "2rem", marginBottom: "60px" }}>
+        ADVANTAGES
       </h2>
       </Font>
 
-      <Font family='MedievalSharp'>
+      <Font family='Montserrat'>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          gap: "40px",
+          gap: "80px",
         }}
       >
         {advantages.map((item, index) => (
@@ -124,10 +127,10 @@ function Home() {
     </div>
     
 
-    <Font family='MedievalSharp'>
-    <div style={{ padding: "50px 20px", textAlign: "center" }}>
-      <h2 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "40px" }}>
-        Our Flour Products
+    <Font family='Montserrat' weight={1000} italic={true}>
+    <div style={{ padding: "15px 20px", textAlign: "center" }}>
+      <h2 style={{ fontSize: "2rem", marginBottom: "40px", marginTop: "0px" }}>
+       PRODUCTS
       </h2>
 
       <div
