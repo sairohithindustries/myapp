@@ -102,4 +102,12 @@ Women Enterpreneru ship .
 
 
 
+import { GiFlour } from "react-icons/gi";
+<HugeiconsIcon icon={TickDouble04Icon} /> quality 
+<HugeiconsIcon icon={ContainerTruck02Icon} />truck
+<HugeiconsIcon icon={Plant01Icon} /> organic ingredients.
+<HugeiconsIcon icon={PackageProcessIcon} /> advanced milling technique
+
+
+
 
