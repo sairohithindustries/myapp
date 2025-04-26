@@ -6,6 +6,7 @@ import {
   PackageProcessIcon,
 } from "hugeicons-react";
 import Font, {Text} from 'react-font'
+import Contact from './Contact';
 
 function Home() {
 
@@ -159,6 +160,9 @@ function Home() {
         ))}
       </div>
     </div>
+
+    <Contact/>
+
 
 
 

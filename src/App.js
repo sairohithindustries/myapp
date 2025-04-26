@@ -22,11 +22,11 @@ function App() {
     <>
     <Router>
       <div style={styles.appContainer}>
-      <div style ={styles.navbar}>
+      {/* <div style ={styles.navbar}>
         <Link style={styles.link} to="/myapp">Home</Link> 
         <Link style={styles.link} to ="/myapp/products">Products</Link>
         <Link style={styles.link} to="/myapp/contact">Contact Us </Link>
-      </div>
+      </div> */}
       <Routes>
         <Route path="/myapp" element={<Home />} />
         <Route path="/myapp/contact" element={<Contact />}/>
