@@ -15,6 +15,44 @@ function Home() {
     { icon: <ContainerTruck02Icon size={48} />, title: "Reliable Supply & Delivery" },
   ];
 
+  const products = [
+    {
+      name: "Chakki Atta",
+      description: "High-quality Chakki Atta for soft and fluffy rotis",
+      image: "https://i.imgur.com/znZOMpK.jpg",
+    },
+    {
+      name: "Maida",
+      description: "Refined flour perfect for baking and pastries",
+      image: "https://i.imgur.com/WECbYrA.jpg",
+    },
+    {
+      name: "Bombay Rava",
+      description: "Ideal for upma and traditional Indian dishes",
+      image: "https://i.imgur.com/QEwsWeO.jpg",
+    },
+    {
+      name: "Chiroti Rava",
+      description: "Finely milled rava for fluffy and soft recipes",
+      image: "https://i.imgur.com/KPLmWOH.jpg",
+    },
+    {
+      name: "Bansi Rava",
+      description: "Coarse textured rava perfect for authentic flavors",
+      image: "https://i.imgur.com/KtNysYD.jpg",
+    },
+    {
+      name: "Besan Flour",
+      description: "Pure besan, ideal for sweets and savory dishes",
+      image: "https://i.imgur.com/8ccp21l.jpg",
+    },
+    {
+      name: "Idli Rava",
+      description: "Perfectly milled rava for soft, fluffy idlis",
+      image: "https://i.imgur.com/8vEgFqd.jpg",
+    },
+  ];
+
   return (
     <>
     {/* <img
@@ -76,6 +114,50 @@ function Home() {
             <p style={{ fontSize: "1rem", lineHeight: "1.4", marginTop: "10px" }}>
               {item.title}
             </p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+    <div style={{ padding: "50px 20px", textAlign: "center" }}>
+      <h2 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "40px" }}>
+        Our Flour Products
+      </h2>
+
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "30px",
+        }}
+      >
+        {products.map((product, index) => (
+          <div
+            key={index}
+            style={{
+              width: "220px",
+              borderRadius: "12px",
+              overflow: "hidden",
+              boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+              background: "#fff",
+              transition: "transform 0.3s",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+          >
+            <img
+              src={product.image}
+              alt={product.name}
+              style={{ width: "100%", height: "150px", objectFit: "cover" }}
+            />
+            <div style={{ padding: "15px" }}>
+              <h3 style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "8px" }}>
+                {product.name}
+              </h3>
+              <p style={{ fontSize: "0.9rem", color: "#555" }}>{product.description}</p>
+            </div>
           </div>
         ))}
       </div>
