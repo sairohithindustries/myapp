@@ -5,6 +5,7 @@ import {
   Plant01Icon,
   PackageProcessIcon,
 } from "hugeicons-react";
+import Font, {Text} from 'react-font'
 
 function Home() {
 
@@ -55,12 +56,6 @@ function Home() {
 
   return (
     <>
-    {/* <img
-            src={"https://i.imgur.com/2AywGtX.jpg"}
-            //https://imgur.com/a/JdWHfgc
-            //alt={product}
-            //style={styles.productImage}
-    /> */}
     <div style={{ position: "relative", height: "60vh", width: "100%" }}>
       <img
         src="https://i.imgur.com/2AywGtX.jpg"
@@ -86,9 +81,11 @@ function Home() {
           padding: "16px",
         }}
       >
+        <Font family='Fascinate Inline'>
         <h1 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "8px" }}>
           From Field to Flour
         </h1>
+        </Font>
         <p style={{ fontSize: "1.25rem" }}>
           High-Quality Flours for Your Culinary Needs
         </p>
