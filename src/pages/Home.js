@@ -82,7 +82,7 @@ function Home() {
           padding: "16px",
         }}
       >
-        <Font family='Fascinate Inline'>
+        <Font family='Cinzel Decorative'>
         <h1 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "8px" }}>
           From Field to Flour
         </h1>

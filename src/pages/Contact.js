@@ -9,7 +9,7 @@ function Contact() {
       alignItems: "center",
       justifyContent: "center",
       padding: "24px",
-      backgroundColor: "rgb(171, 171, 164)",
+      // backgroundColor: "rgb(171, 171, 164)",
       minHeight : "100vh"
     },
     contactItem: {
