@@ -87,17 +87,22 @@ function Home() {
           From Field to Flour
         </h1>
         </Font>
+        <Font family='MedievalSharp'>
         <p style={{ fontSize: "1.25rem" }}>
           High-Quality Flours for Your Culinary Needs
         </p>
+        </Font>
       </div>
     </div>
 
     <div style={{ padding: "40px 20px", textAlign: "center" }}>
+      <Font family='MedievalSharp'>
       <h2 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "30px" }}>
         OUR ADVANTAGES
       </h2>
+      </Font>
 
+      <Font family='MedievalSharp'>
       <div
         style={{
           display: "flex",
@@ -115,9 +120,11 @@ function Home() {
           </div>
         ))}
       </div>
+      </Font>
     </div>
+    
 
-
+    <Font family='MedievalSharp'>
     <div style={{ padding: "50px 20px", textAlign: "center" }}>
       <h2 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "40px" }}>
         Our Flour Products
@@ -160,12 +167,10 @@ function Home() {
         ))}
       </div>
     </div>
+    </Font>
+    
 
     <Contact/>
-
-
-
-
 
     </>
   )
