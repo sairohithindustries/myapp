@@ -46,7 +46,7 @@ const styles = {
     flexDirection : "column",    
     justifyContent: "center", // Centers the navbar links
     width: "100%",
-    backgroundColor: "rgba(251, 251, 249, 1)",
+    backgroundColor: "rgb(247, 245, 219)",
     padding: "0px 0px",
     gap : "0px"
   },
