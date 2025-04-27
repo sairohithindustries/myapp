@@ -1,4 +1,4 @@
-import React from 'react'
+import { React,useState, useEffect } from 'react'
 import {
   TickDouble04Icon,
   ContainerTruck02Icon,
@@ -11,6 +11,21 @@ import Font, {Text} from 'react-font'
 import Contact from './Contact';
 
 function Home() {
+
+  const fullText = "FROM FIELD TO FLOUR";
+  const [text, setText] = useState("");
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < fullText.length) {
+      const timeout = setTimeout(() => {
+        setText((prev) => prev + fullText.charAt(index));
+        setIndex((prev) => prev + 1);
+      }, 100); // 100ms delay between letters
+
+      return () => clearTimeout(timeout); // Clean up timeout
+    }
+  }, [index, fullText]);
 
   const advantages = [
     { icon: <Plant01Icon size={48} />, title: "Organic Ingredients" },
@@ -87,7 +102,7 @@ function Home() {
         <Font family='Spectral' weight= "1000000" >
         <h1 style={{ fontSize: "4rem", marginBottom: "8px" }}>
           {/* From Field to Flour */}
-          FROM FIELD TO FLOUR
+          {text}
         </h1>
         </Font>
 
