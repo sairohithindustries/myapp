@@ -1,9 +1,6 @@
 import React from 'react'
 import Font, {Text} from 'react-font'
 import {
-  TickDouble04Icon,
-  ContainerTruck02Icon,
-  Plant01Icon,
   PackageProcessIcon,
   Call02Icon,
   Mail02Icon
@@ -54,8 +51,30 @@ function Contact() {
     <h1>CONTACT</h1>
     </div>   
     <div style={styles.container}>
-    <div style={styles.contactItem}>
+      
+    {/* <div style={styles.contactItem}>
       <Call02Icon size={20} fill="black"></Call02Icon> <a href="tel:08552226594">08552226594</a>
+    </div> */}
+
+
+
+    <div style={styles.contactItem}>
+      <Call02Icon size={20} fill="black"></Call02Icon>
+      <span><strong>Contact number</strong>: <a href="tel:+919515319049">+91 95153 19049</a></span>
+    </div>
+
+    <div style={styles.contactItem}>
+      <PackageProcessIcon size={20} fill="black"></PackageProcessIcon>
+      <span>
+        <strong>Address</strong>: Plot No 13, APIIC, Gooty Road, Guntakal,
+        <br />
+        Anantapur Dist - 515801
+      </span>
+    </div>
+
+    <div style={styles.contactItem}>
+      <PackageProcessIcon size={20} fill="black"></PackageProcessIcon>
+      <span><strong>Food License no (FSSAI)</strong>: 10117013000686</span>
     </div>
 
     {/* <div style={styles.contactItem}>
@@ -66,8 +85,6 @@ function Contact() {
     <div style={styles.contactItem}>
      <Mail02Icon size={20} ></Mail02Icon> <a href="mailto:srigoldgtl@gmail.com">srigoldgtl@gmail.com</a>
     </div>
-
-
 
 
     <div style={styles.mapContainer}>
