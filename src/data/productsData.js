@@ -15,6 +15,16 @@ export const COMPANY_INFO = {
   directionsUrl: "https://maps.google.com/?q=Sai+Rohith+Industries+Guntakal"
 };
 
+export const DEVELOPER_INFO = {
+  name: "Quick Developers",
+  website: "https://www.quickdevelopers.in",
+  displayWebsite: "www.quickdevelopers.in",
+  phone: "+91 80748 96216",
+  phoneRaw: "+918074896216",
+  whatsapp: "918074896216",
+  whatsappUrl: "https://wa.me/918074896216?text=Hello%20Quick%20Developers,%20I%20saw%20your%20work%20on%20Sai%20Rohith%20Industries%20website."
+};
+
 export const ADVANTAGES_DATA = [
   {
     id: 1,

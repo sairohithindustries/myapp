@@ -5,9 +5,10 @@ import {
   Mail02Icon,
   Location01Icon,
   Award01Icon,
-  WhatsappIcon
+  WhatsappIcon,
+  Globe02Icon
 } from 'hugeicons-react';
-import { COMPANY_INFO, PRODUCTS_LIST } from '../data/productsData';
+import { COMPANY_INFO, PRODUCTS_LIST, DEVELOPER_INFO } from '../data/productsData';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -131,6 +132,54 @@ function Footer() {
             <span>FSSAI License: {COMPANY_INFO.fssai}</span>
             <span>•</span>
             <span>Guntakal, Andhra Pradesh</span>
+          </div>
+        </div>
+
+        {/* Developer Credentials Bar */}
+        <div className="footer-dev-bar">
+          <div className="footer-dev-left">
+            <span>Designed & Developed by</span>
+            <a
+              href={DEVELOPER_INFO.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="dev-company-link"
+            >
+              {DEVELOPER_INFO.name}
+            </a>
+          </div>
+
+          <div className="footer-dev-links">
+            <a
+              href={DEVELOPER_INFO.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="dev-link-pill"
+              title="Visit Quick Developers Website"
+            >
+              <Globe02Icon size={14} />
+              <span>{DEVELOPER_INFO.displayWebsite}</span>
+            </a>
+
+            <a
+              href={`tel:${DEVELOPER_INFO.phoneRaw}`}
+              className="dev-link-pill"
+              title="Call Quick Developers"
+            >
+              <Call02Icon size={14} />
+              <span>{DEVELOPER_INFO.phone}</span>
+            </a>
+
+            <a
+              href={DEVELOPER_INFO.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="dev-link-pill dev-link-whatsapp"
+              title="Chat with Quick Developers on WhatsApp"
+            >
+              <WhatsappIcon size={14} />
+              <span>WhatsApp</span>
+            </a>
           </div>
         </div>
       </div>

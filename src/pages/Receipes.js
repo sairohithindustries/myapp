@@ -22,7 +22,7 @@ function Receipes() {
             <span>🍲</span>
             Kitchen Companion
           </span>
-          <h1 className="section-title" style={{ fontSize: '3rem', marginBottom: '16px' }}>
+          <h1 className="section-title">
             Recipes & Culinary Inspiration
           </h1>
           <p className="section-subtitle">
@@ -56,6 +56,7 @@ function Receipes() {
           {filteredProducts.map((product) => (
             <div
               key={product.id}
+              className="recipe-product-container"
               style={{
                 background: 'var(--bg-white)',
                 borderRadius: 'var(--radius-xl)',
@@ -94,7 +95,7 @@ function Receipes() {
               </div>
 
               {/* Recipe Cards under this product */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px', marginTop: '28px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', marginTop: '28px' }}>
                 {product.recipes.map((recipe, rIdx) => (
                   <div
                     key={rIdx}

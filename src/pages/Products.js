@@ -42,7 +42,7 @@ function Products() {
             <span>🌾</span>
             Pure & Freshly Milled
           </span>
-          <h1 className="section-title" style={{ fontSize: '3rem', marginBottom: '16px' }}>
+          <h1 className="section-title">
             Our Product Portfolio
           </h1>
           <p className="section-subtitle">
@@ -112,16 +112,6 @@ function Products() {
             {filteredProducts.map((product) => (
               <div
                 key={product.id}
-                style={{
-                  background: 'var(--bg-white)',
-                  borderRadius: 'var(--radius-xl)',
-                  border: '1px solid var(--border-light)',
-                  boxShadow: 'var(--shadow-sm)',
-                  overflow: 'hidden',
-                  display: 'grid',
-                  gridTemplateColumns: '320px 1fr',
-                  transition: 'all 0.3s ease'
-                }}
                 className="detailed-product-card"
               >
                 {/* Product Image Column */}

@@ -10,7 +10,9 @@ import {
   Award01Icon,
   ArrowRight01Icon,
   StarIcon,
-  CheckmarkCircle02Icon
+  CheckmarkCircle02Icon,
+  HelpCircleIcon,
+  ArrowDown01Icon
 } from 'hugeicons-react';
 import {
   COMPANY_INFO,
@@ -28,6 +30,34 @@ function Home() {
   const [charIndex, setCharIndex] = useState(0);
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedProductForRecipe, setSelectedProductForRecipe] = useState(null);
+  const [openFaqIndex, setOpenFaqIndex] = useState(0);
+
+  const faqs = [
+    {
+      q: "Is Sri Gold Chakki Atta 100% whole wheat with zero maida?",
+      a: "Yes. Sri Gold Whole Wheat Chakki Atta is 100% whole wheat with 0% maida and zero synthetic bleaches. Produced under FSSAI License 10117013000686, it retains the natural bran and germ to deliver 14.3g dietary fibre per 100g."
+    },
+    {
+      q: "What are the certified nutritional values of Sri Gold Chakki Atta?",
+      a: "According to certified laboratory packaging analysis per 100g: Energy: 363 kcal, Protein: 11.8g, Dietary Fibre: 14.3g, Carbohydrates: 75.1g, Iron: 3.3mg, Calcium: 63.3mg, Total Fat: 1.7g, Trans Fat: 0.0g, and Zero Cholesterol."
+    },
+    {
+      q: "Does Sai Rohith Industries supply wholesale 50kg bulk bags for bakeries and caterers?",
+      a: "Yes. We supply 25kg and 50kg commercial moisture-barrier woven bags of Sri Gold Chakki Atta, Premium Refined Maida, Bombay Rava, and Besan to commercial bakeries, hotels, caterers, and wholesale distributors across Andhra Pradesh, Karnataka, and Telangana with fast direct-from-mill dispatch."
+    },
+    {
+      q: "Where is the Sri Gold manufacturing facility located?",
+      a: "Our modern milling plant is located at Plot No. 13, APIIC Industrial Area, Gooty Road, Guntakal - 515801, Anantapur District, Andhra Pradesh. Contact our sales desk at +91 95153 19049 or srigoldgtl@gmail.com."
+    },
+    {
+      q: "What other products are manufactured by Sai Rohith Industries?",
+      a: "Under the Sri Gold brand, we manufacture 7+ grain products including Premium Refined Maida, Bombay Rava (Soji), Bansi Rava (Cracked Wheat), Pure Roasted Besan, and Chiroti Rava, available in both consumer retail packs and 50kg wholesale bags."
+    },
+    {
+      q: "How can I request bulk supply rates or distribution dealership?",
+      a: "You can click the 'Get Bulk Quote' button in the navbar, message our direct WhatsApp at +91 95153 19049, or call our sales desk at +91 95153 19049 / 08552226594 for tiered wholesale pricing and transportation schedules."
+    }
+  ];
 
   // Typewriter effect
   useEffect(() => {
@@ -69,61 +99,90 @@ function Home() {
         </div>
         <div className="hero-overlay"></div>
 
-        <div className="container hero-content">
-          <div className="hero-pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
-            <img
-              src={`${process.env.PUBLIC_URL}/logo-sri-gold.png`}
-              alt="Sri Gold"
-              style={{ height: '24px', width: 'auto', objectFit: 'contain' }}
-            />
-            <span>{COMPANY_INFO.name} • {COMPANY_INFO.brand}</span>
-          </div>
+        <div className="container hero-container">
+          <div className="hero-grid">
+            {/* Left Content Column */}
+            <div className="hero-text-col">
+              <div className="hero-pill">
+                <img
+                  src={`${process.env.PUBLIC_URL}/logo-sri-gold.png`}
+                  alt="Sri Gold Logo"
+                  style={{ height: '22px', width: 'auto', objectFit: 'contain' }}
+                />
+                <span>{COMPANY_INFO.name} • {COMPANY_INFO.brand}</span>
+              </div>
 
-          <h1 className="hero-title">
-            {typedText}
-            <span className="cursor-blink">|</span>
-          </h1>
+              <h1 className="hero-title">
+                {typedText}
+                <span className="cursor-blink">|</span>
+              </h1>
 
-          <p className="hero-description">
-            Nourishing families and culinary businesses with farm-selected grains, cold stone chakki milling, and pure, chemical-free Chakki Atta, Maida, Besan, and Rava varieties.
-          </p>
+              <p className="hero-description">
+                100% Whole Wheat Chakki Atta, Premium Maida & Golden Rava varieties. Cold stone-milled with zero chemical additives in Guntakal, AP.
+              </p>
 
-          <div className="hero-ctas">
-            <a href="#featured-products" className="btn btn-primary btn-lg">
-              Explore Our Products
-              <ArrowRight01Icon size={18} />
-            </a>
-            <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20Sai%20Rohith%20Industries,%20I%20am%20interested%20in%20bulk%20supply.`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-whatsapp btn-lg"
-            >
-              <WhatsappIcon size={20} />
-              Instant WhatsApp Inquiry
-            </a>
-            <a href="#about-story" className="btn btn-outline btn-lg">
-              Our Milling Craft
-            </a>
-          </div>
+              {/* Action Buttons */}
+              <div className="hero-ctas">
+                <a href="#featured-products" className="btn btn-primary btn-lg">
+                  Explore Products
+                  <ArrowRight01Icon size={18} />
+                </a>
+                <a
+                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20Sai%20Rohith%20Industries,%20I%20am%20interested%20in%20bulk%20supply.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-whatsapp btn-lg"
+                >
+                  <WhatsappIcon size={20} />
+                  WhatsApp Inquiry
+                </a>
+              </div>
 
-          {/* Quick Floating Trust Stats */}
-          <div className="hero-stats-row">
-            <div className="hero-stat-item">
-              <div className="hero-stat-number">100%</div>
-              <div className="hero-stat-label">Natural & Pure Grains</div>
+              {/* Sleek Trust Badge Grid */}
+              <div className="hero-trust-grid">
+                <div className="hero-trust-pill">
+                  <span className="trust-check">✓</span>
+                  <span>100% Atta, 0% Maida</span>
+                </div>
+                <div className="hero-trust-pill">
+                  <span className="trust-check">✓</span>
+                  <span>FSSAI Lic: {COMPANY_INFO.fssai}</span>
+                </div>
+                <div className="hero-trust-pill">
+                  <span className="trust-check">✓</span>
+                  <span>Butter-Soft Roties</span>
+                </div>
+                <div className="hero-trust-pill">
+                  <span className="trust-check">✓</span>
+                  <span>Retail & 50kg Bulk Bags</span>
+                </div>
+              </div>
             </div>
-            <div className="hero-stat-item">
-              <div className="hero-stat-number">7+</div>
-              <div className="hero-stat-label">Flour & Rava Varieties</div>
-            </div>
-            <div className="hero-stat-item">
-              <div className="hero-stat-number">FSSAI</div>
-              <div className="hero-stat-label">Certified Facility</div>
-            </div>
-            <div className="hero-stat-item">
-              <div className="hero-stat-number">B2B & Retail</div>
-              <div className="hero-stat-label">Bulk 50kg & Consumer Packs</div>
+
+            {/* Right Product Visual Column */}
+            <div className="hero-visual-col">
+              <div className="hero-product-stage">
+                <div className="hero-product-glow"></div>
+                <img
+                  src={`${process.env.PUBLIC_URL}/products/sri-gold-chakki-atta-transparent.png`}
+                  alt="Sri Gold Whole Wheat Chakki Atta Pouch"
+                  className="hero-pouch-img"
+                />
+                {/* Floating Highlights */}
+                <div className="floating-badge badge-top">
+                  <span style={{ fontSize: '1.1rem' }}>🌾</span>
+                  <div>
+                    <div style={{ fontWeight: '800', fontSize: '0.78rem', color: '#FFFFFF', lineHeight: 1.1 }}>Special Wheat</div>
+                    <div style={{ fontSize: '0.68rem', color: '#F3C367' }}>Direct From Farmer</div>
+                  </div>
+                </div>
+                <div className="floating-badge badge-bottom">
+                  <span style={{ fontSize: '1.2rem', fontWeight: '800', color: '#25D366' }}>14.3g</span>
+                  <div style={{ fontSize: '0.72rem', color: '#FFFFFF', fontWeight: '600', lineHeight: 1.1 }}>
+                    Dietary<br />Fibre
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -232,9 +291,9 @@ function Home() {
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <Link to="/myapp/products" className="btn btn-secondary btn-lg">
-              View Detailed Product Specs & Packaging Sizes
+          <div style={{ textAlign: 'center', marginTop: '48px', display: 'flex', justifyContent: 'center' }}>
+            <Link to="/myapp/products" className="btn btn-secondary btn-lg" style={{ maxWidth: '100%' }}>
+              View Detailed Product Specs & Sizes
               <ArrowRight01Icon size={18} />
             </Link>
           </div>
@@ -394,9 +453,9 @@ function Home() {
             </div>
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <Link to="/myapp/recipes" className="btn btn-secondary btn-lg">
-              Explore All 14+ Recipes & Cooking Instructions
+          <div style={{ textAlign: 'center', marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
+            <Link to="/myapp/recipes" className="btn btn-secondary btn-lg" style={{ maxWidth: '100%' }}>
+              Explore All 14+ Recipes & Cooking Steps
               <ArrowRight01Icon size={18} />
             </Link>
           </div>
@@ -438,7 +497,71 @@ function Home() {
         </div>
       </section>
 
-      {/* 8. CONTACT US & LOCATION EMBED */}
+      {/* 8. FREQUENTLY ASKED QUESTIONS (AEO & USER ASSURANCE) */}
+      <section className="faq-section" id="faq">
+        <div className="container" style={{ maxWidth: '920px' }}>
+          <div className="section-header">
+            <span className="section-eyebrow">
+              <HelpCircleIcon size={16} />
+              Verified Answers
+            </span>
+            <h2 className="section-title">Frequently Asked Questions</h2>
+            <p className="section-subtitle">
+              Everything you need to know about Sri Gold wheat flour quality, nutritional facts, wholesale supply, and factory operations in Guntakal.
+            </p>
+          </div>
+
+          <div className="faq-accordion-list">
+            {faqs.map((faq, idx) => {
+              const isOpen = openFaqIndex === idx;
+              return (
+                <div
+                  key={idx}
+                  className={`faq-accordion-item ${isOpen ? 'open' : ''}`}
+                >
+                  <button
+                    className="faq-accordion-trigger"
+                    onClick={() => setOpenFaqIndex(isOpen ? -1 : idx)}
+                    aria-expanded={isOpen}
+                  >
+                    <span className="faq-question-text">{faq.q}</span>
+                    <span className={`faq-icon ${isOpen ? 'rotated' : ''}`}>
+                      <ArrowDown01Icon size={18} />
+                    </span>
+                  </button>
+                  {isOpen && (
+                    <div className="faq-accordion-body">
+                      <p>{faq.a}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="faq-cta-box">
+            <div>
+              <h4 style={{ margin: '0 0 6px 0', fontSize: '1.1rem', color: 'var(--text-primary)' }}>
+                Have a specific question or custom packaging requirement?
+              </h4>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                Speak directly with our milling specialists or sales desk in Guntakal.
+              </p>
+            </div>
+            <a
+              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20Sai%20Rohith%20Industries,%20I%20have%20a%20question%20regarding%20Sri%20Gold%20flour.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-whatsapp"
+            >
+              <WhatsappIcon size={18} />
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. CONTACT US & LOCATION EMBED */}
       <div id="contact-section">
         <Contact />
       </div>

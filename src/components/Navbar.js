@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   Call02Icon,
@@ -11,7 +11,20 @@ import { COMPANY_INFO } from '../data/productsData';
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 15) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -26,7 +39,7 @@ function Navbar() {
   };
 
   return (
-    <>
+    <header className={`site-header-fixed ${isScrolled ? 'scrolled' : ''}`}>
       {/* Top Notification / Trust Bar */}
       <div className="top-bar">
         <div className="container top-bar-inner">
@@ -178,8 +191,12 @@ function Navbar() {
             </a>
           </div>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="mobile-nav-backdrop" onClick={closeMenu}></div>
+        )}
       </nav>
-    </>
+    </header>
   );
 }
 

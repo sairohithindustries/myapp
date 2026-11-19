@@ -34,12 +34,12 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-main)' }}>
+      <div style={{ minHeight: '100vh', width: '100%', maxWidth: '100%', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-main)', overflowX: 'hidden' }}>
         {/* Sticky Professional Navbar */}
         <Navbar />
 
         {/* Dynamic Page Routes */}
-        <main style={{ flexGrow: 1 }}>
+        <main className="site-main-content" style={{ flexGrow: 1, width: '100%', maxWidth: '100%', overflowX: 'hidden' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/myapp" element={<Home />} />

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://sairohithindustries.github.io/myapp/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sairohithindustries.github.io/myapp/products/sri-gold-chakki-atta-front.jpg</image:loc>
+      <image:title>Sri Gold Whole Wheat Chakki Atta Pouch</image:title>
+      <image:caption>100% Whole Wheat Chakki Atta, 0% Maida, cold stone-milled in Guntakal, AP</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://sairohithindustries.github.io/myapp/products</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sairohithindustries.github.io/myapp/products/sri-gold-chakki-atta-nutrition.jpg</image:loc>
+      <image:title>Sri Gold Nutritional Facts &amp; FSSAI Certification</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://sairohithindustries.github.io/myapp/recipes</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sairohithindustries.github.io/myapp/about</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sairohithindustries.github.io/myapp/contact</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

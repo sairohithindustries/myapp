@@ -20,7 +20,7 @@ function About() {
             <span>🌾</span>
             About Sai Rohith Industries
           </span>
-          <h1 className="section-title light" style={{ fontSize: '3rem', marginBottom: '16px' }}>
+          <h1 className="section-title light">
             Rooted in Tradition, Powered by Precision
           </h1>
           <p className="section-subtitle" style={{ color: '#D3C9BD' }}>
