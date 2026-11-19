@@ -1,75 +1,69 @@
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
-import {React} from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Receipes from './pages/Receipes';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+
+import Home from './pages/Home';
 import Products from './pages/Products';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import Receipes from './pages/Receipes';
 
+// Helper component to scroll to top on route change
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
 
-function App() {
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname, hash]);
 
-  
-  //in case if you want to redirect in future.
-    // useEffect(() => {
-    //   window.location.href = "https://www.google.com";
-    // }, []);
-
-    // return null;
-
-  return (
-    <>
-    <Router>
-      <div style={styles.appContainer}>
-      {/* <div style ={styles.navbar}>
-        <Link style={styles.link} to="/myapp">Home</Link> 
-        <Link style={styles.link} to ="/myapp/products">Products</Link>
-        <Link style={styles.link} to="/myapp/contact">Contact Us </Link>
-      </div> */}
-      <Routes>
-        <Route path="/myapp" element={<Home />} />
-        <Route path="/myapp/contact" element={<Contact />}/>
-        <Route path="/myapp/products" element={<Products/>}/>
-      </Routes>
-      </div>
-    </Router>
-    </>
-    
-  );
+  return null;
 }
 
-const styles = {
+function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-main)' }}>
+        {/* Sticky Professional Navbar */}
+        <Navbar />
 
-  appContainer : {
-    display: "flex",
-    flexDirection : "column",    
-    justifyContent: "center", // Centers the navbar links
-    width: "100%",
-    backgroundColor: "rgb(247, 245, 219)",
-    padding: "0px 0px",
-    gap : "0px"
-  },
+        {/* Dynamic Page Routes */}
+        <main style={{ flexGrow: 1 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/myapp" element={<Home />} />
+            <Route path="/myapp/products" element={<Products />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/myapp/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/myapp/about" element={<About />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/myapp/recipes" element={<Receipes />} />
+            <Route path="/recipes" element={<Receipes />} />
+            {/* Catch-all fallback */}
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </main>
 
-  navbar: {
-    display: "flex",
-    justifyContent: "center",
-    padding: "15px 0px",
-    backgroundColor: "rgba(17, 5, 2, 0.52)",
-    width : "100%",
-    position: "sticky",   // Makes it stick to the top
-    top: "0",             // Sticks to the top of the viewport
-    zIndex: "1000",       // Ensures it's above other elements
-  },
-  link: {
-    color: "white",
-    textDecoration: "none",
-    fontSize: "18px",
-    fontWeight: "bold",
-    padding: "10px 15px",
-    borderRadius: "5px",
-    transition: "background 0.3s",
-  }
-};
+        {/* Global Footer */}
+        <Footer />
+
+        {/* Persistent Floating WhatsApp Help Button */}
+        <FloatingWhatsApp />
+      </div>
+    </Router>
+  );
+}
 
 export default App;
