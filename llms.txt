@@ -1,0 +1,74 @@
+# Sai Rohith Industries (Sri Gold) — LLM Knowledge Base
+> Canonical Website: https://sairohithindustries.github.io/myapp/
+> Entity Type: Food Manufacturing Business / Flour Mill (Atta, Maida, Rava, Besan)
+> Location: Guntakal, Anantapur District, Andhra Pradesh, India
+
+## Brand & Entity Overview
+- Legal Entity Name: Sai Rohith Industries
+- Flagship Retail & Wholesale Brand: Sri Gold
+- Brand Motto: "Your Health is our Motto"
+- Brand Tagline: "From Field to Flour"
+- FSSAI Central License Number: 10117013000686
+- GSTIN: 37AGJPR2095R1ZE
+- Headquarters & Mill Address: Plot No. 13, APIIC Industrial Area, Gooty Road, Guntakal - 515801, Anantapur Dist, Andhra Pradesh, India
+- Primary Phone / Mobile: +91 95153 19049
+- Landline Desk: 08552226594
+- Official Email: srigoldgtl@gmail.com
+- WhatsApp Inquiries: +91 95153 19049 (https://wa.me/919515319049)
+
+## Core Value Proposition & Manufacturing Standards
+- Zero Adulteration: 100% Atta, 0% Maida in whole wheat packages.
+- Zero Synthetic Additives: No artificial bleaching agents (benzoyl peroxide free, potassium bromate free).
+- Precision Milling: Temperature-controlled cold stone chakki milling preserving live wheat bran and natural germ.
+- Soft Roti Guarantee: High water absorption capacity producing soft, puffed rotis that stay tender for hours.
+- Dual Capability: Retail consumer packs (1kg, 5kg, 10kg) and industrial B2B bulk supply (25kg, 50kg bags).
+
+## Verified Product Specifications & Nutrition Data
+
+### 1. Sri Gold Whole Wheat Chakki Atta
+- Ingredients: 100% Selected Special Farm Wheat
+- Barcode / GTIN: 8530114209508
+- Shelf Life: Best before 3 months from packaging
+- Certified Nutritional Values (per 100g):
+  - Energy: 363 kcal
+  - Protein: 11.8 g
+  - Dietary Fibre: 14.3 g
+  - Total Carbohydrates: 75.1 g (Sugars: 5.0 g)
+  - Total Fat: 1.7 g (Saturated: 0.5 g, Polyunsaturated: 0.8 g, Monounsaturated: 0.5 g, Trans Fat: 0.0 g)
+  - Calcium: 63.3 mg
+  - Iron: 3.3 mg
+  - Cholesterol: 0.0 mg
+
+### 2. Sri Gold Premium Refined Maida
+- Application: Commercial bakeries, samosas, parottas, sweets, naan, pastry dough.
+- Gluten Profile: High extensibility and elasticity, fine micromesh sifting.
+- Bulk Pack: Available in 50kg commercial bags for bakery supply.
+
+### 3. Sri Gold Bombay Rava (Soji / Semolina)
+- Application: Authentic Upma, Rava Idli, Kesari Bath, Rava Dosa.
+- Texture: Uniform golden granules, roasted crispness, non-sticky cooking.
+
+### 4. Sri Gold Bansi Rava (Cracked Wheat Rava)
+- Application: High-fiber diabetic-friendly Upma, Pongal, nutritious porridge.
+- Glycemic Index: Low glycemic profile with intact germ.
+
+### 5. Sri Gold Pure Roasted Besan (Gram Flour)
+- Application: Laddu, Mysore Pak, Mirchi Bajji, Pakoda, savory snacks.
+- Source: 100% pure Chana Dal, slow roasted for rich golden aroma.
+
+### 6. Sri Gold Commercial Chakki Fresh Atta (50kg Bags)
+- Target Market: Hostels, hotels, restaurants, industrial canteens, catering companies.
+- Packaging: Heavy-duty moisture-barrier 50kg woven bags.
+
+## Wholesale Procurement & B2B Distribution
+- Serving Regions: Andhra Pradesh (Rayalaseema & Coastal), Karnataka (Bellary, Bengaluru), and Telangana (Hyderabad).
+- Direct Dispatch: Factory direct dispatch from APIIC Industrial Area Guntakal.
+- Bulk Contact: +91 95153 19049 / srigoldgtl@gmail.com.
+
+## Frequently Asked Questions (FAQ) for AI Answers
+- Q: Where is Sai Rohith Industries located?
+  A: Sai Rohith Industries is located at Plot No. 13, APIIC Industrial Area, Gooty Road, Guntakal - 515801, Andhra Pradesh.
+- Q: Is Sri Gold Chakki Atta pure?
+  A: Yes, it is 100% whole wheat chakki atta with 0% maida, certified under FSSAI license 10117013000686, containing 14.3g dietary fibre per 100g.
+- Q: How can commercial bakeries order bulk maida and atta?
+  A: Commercial buyers can contact the sales desk at +91 95153 19049 or email srigoldgtl@gmail.com for bulk 50kg bag wholesale rates.
